@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="suplementos.css">
+  <link rel="shortcut icon" href="../Imagens/Objeto Inteligente de Vetor-2.png" type="image/x-icon">
+  <title>Suplementos</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+    
+    header {
+      font-family: 'Poppins';
+      background-color: #ff6900;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    nav {
+      background-color: #ff6900;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: center; /* Centraliza os itens do menu */
+      align-items: center;
+      padding: 0 100px;
+    }
+
+    .nav-item {
+      list-style: none;
+      display: inline;
+      margin: 0 100px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .product-container {
+      display: inline-block;
+      width: 300px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      height: 50px; /* Altura fixa para manter proporções */
+      object-fit: cover; /* Mantém a proporção sem distorcer a imagem */
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .laranja-button-maior {
+      padding: 15px 20px;
+      font-size: 16px;
+      background-color: #ff6900;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    .laranja-button-maior:hover {
+      background-color: #ff8533;
+    }
+
+    footer {
+      background-color: #ff6900;
+      color: #ffffff;
+      text-align: center;
+      padding: 5px;
+      position:relative;
+      bottom: 0;
+      width: 100%;
+      text-shadow: 2px 2px 2px #000;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="../Index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="https://www.whatsapp.com/?lang=pt_BR" class="nav-link">Sobre</a></li>
+        </ul>
+        <div class="logo">
+          <img class="img_logo" src="../Imagens/Logo_laranja_comescrita_branca_png-removebg-preview.png" alt="Grão Natural">
+        </div>
+        <ul>
+          <li class="nav-item"><a href="https://www.whatsapp.com/?lang=pt_BR" class="nav-link">Promoção</a></li>
+          <li class="nav-item"><a href="../Castanhas/Castanhas.html" class="nav-link">Catálogo</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <!--Fim do Header-->
+
+
+
+  <!--Inicio do Catalogo-->
+
+  <div class="catalog">
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+    <img src="../Imagens/Glutamina em Pó.jpg" alt="Imagem do Produto">
+      <h2>Glutamina em Pó</h2>
+      <p class="price">R$ 98,90</p>
+      <div class="details" id="details2">
+      <p class="description">Glutamina em pó: recuperação muscular, energia e suporte imunológico eficazes.</p>
+      </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+      <img src="../Imagens/Guarana em pó.jpg" alt="Imagem do Produto">
+        <h2>Guarana em Pó</h2>
+        <p class="price">R$ 98,90</p>
+        <div class="details" id="details2">
+        <p class="description">Guaraná em pó: estimulante natural, energia duradoura e foco revigorante.</p>
+        </div>
+      </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Levedo de Cerveja.jpg" alt="Imagem do Produto2">
+          <h2>Levedo de Cerveja</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Levedo de cerveja: fonte nutritiva, fortalece cabelos, pele e unhas.</p>
+          </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Maltodextrina em Pó.jpg" alt="Imagem do Produto2">
+          <h2>Maltodextrina em Pó</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Maltodextrina em pó: rápida energia, ideal para treinos intensos e duradouros.</p>
+          </div>
+    </div>
+
+</div>
+
+<div class="catalog" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+    <div class="catalog-item" onclick="toggleDetails(1)">
+    <img src="../Imagens/Whey.jpg" alt="Imagem do Produto">
+      <h2>Whey Protein</h2>
+      <p class="price">R$ 98,90</p>
+      <div class="details" id="details2">
+      <p class="description">Whey protein: construção muscular, recuperação eficaz, fonte de proteína premium.</p>
+      </div>
+    </div>
+
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Proteina de Ervilha.jpg" alt="Imagem do Produto2">
+          <h2>Proteina de Ervilha</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Proteína de ervilha: vegana, completa, promove saúde e desenvolvimento muscular.</p>
+          </div>
+    </div>
+
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Proteina De Soja.jpg" alt="Imagem do Produto2">
+          <h2>Proteína de Soja</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Proteína de soja: vegetal, nutritiva, ideal para dieta equilibrada e ativa.</p>
+          </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+      <img src="../Imagens/Taurina em Pó.jpg" alt="Imagem do Produto2">
+        <h2>Taurina em Pó</h2>
+        <p class="price">R$ 98,90</p>
+        <div class="details" id="details2">
+        <p class="description">Taurina em pó: impulso de energia, foco mental, suporte antioxidante.</p>
+        </div>
+  </div>
+
+
+</div>
+        </a>
+      </div>
+    <!-- Adicione os outros produtos conforme necessário -->
+  </div>
+  <script src="suplementos.js"></script>
+
+  <!--Fim do catalogo-->
+
+  <footer>   
+    <footer style="background-color: #ed4f0f; padding: 0px;">
+        <div class="main">
+            <div class="content footer-links" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div class="footer-section footer-declaracao" style="width: 20%; margin: 0px; text-align: left;">
+                    
+                    <div class="footer-contact">
+                        <h3>Fale conosco</h3>
+                        <h5>(17)99646-6777</h5>
+                        <h5>graonatural.emporio@gmail.com</h5>
+                
+                        <h5>Ra General Gicério,3898, São José do Rio Preto<br> São Paulo </h5>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-Institucional" style="width: 25%; margin: 8px; text-align: left;">
+                    <h3>Institucional </h3>
+            
+                   
+                    <h6>Mais vendidos</h6>
+                    <h6>FAQ</h6>
+                </div>
+                
+                <div class="footer-section footer-politicas-da-loja" style="width: 25%; margin: 8px; text-align: left;">
+                    <h3>Políticas da Loja </h3>
+                    <h6>Política de Privacidade </h6>
+                    <h6>Trocas </h6>
+                    <h6>Devoluções e Reembolso</h6>
+                </div>
+                
+
+            <div class="footer-social">
+                <h3>Fique Conectado</h3>
+                <a href="https://www.instagram.com/grao_natural_emporio/" target="_blank"><img src="../Imagens/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100090692505353" target="_blank"><img src="../Imagens/facebook.png" alt="Facebook"></a>
+                <a href="https://api.whatsapp.com/send?phone=5517996466777&text=Ol%C3%A1%2C%20tudo%20bem%3F%20estou%20vindo%20pelo%20Instagram%20%F0%9F%98%8A" target="_blank"><img src="../Imagens/Whatsapp.png"  alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="last">
+            Grão Impório Natural - Equipe CFJN Fatec - Versão Demo
+         </div>
+
+
+    </div>
+</footer>
+</body>
+</html>

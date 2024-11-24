@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+ 
+ .catalog {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    width: 100vw;
+    height: 450px;
+    margin: 0px;
+  }
+
+  .catalog-item {
+    border: 1px solid #ccc; /* Borda do item inteiro */
+    border-radius: 12px; /* Borda do item inteiro (menor=quadrado, maior =redondo) */
+    padding: 12px; /* Distancia da imagem pra borda do item */
+    margin: 20px;
+    background-color: #fff; /* cor do fundo do item*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Alinhamento do texto à esquerda */
+    width: 230px; /* Ajuste conforme necessário */
+    transition: transform 0.3s;
+    transition: background-color 0.8s;
+}
+
+.catalog-item:hover {
+    background-color: rgb(234, 238, 221);
+    transform: scale(1.05);
+  }
+
+.catalog-item img {
+    max-width: 70%; /* Enquadramento da imagem no item */
+    height: auto;
+    border-radius: 4px; /* Borda da imagem (menor=mais quadrado, maior= mais redondo) */
+    margin-bottom: 12px;
+}
+
+.catalog-item h2 {
+    font-family: 'Kanit', sans-serif;
+    color: #333; /* Cor do nome do produto */
+}
+
+.catalog-item p.price {
+    color: #ff4600; /* Cor do valor */
+    font-weight: bold;
+    font-size: 1.2em; 
+}
+
+.catalog-item p.description {
+    color: #222; /* Cor da descriçao */
+    position: center;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/*Início do Footer ( rodapé)*/
+    
+footer {
+    font-family: 'Poppins';
+    font-size: 15px;
+    width: 100%;
+    height: 250px;  
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+}
+footer .main {
+    width: 100%;
+    height: 200px;
+    background: #ed4f0f;
+    padding: 20px 10px;
+}
+.footer-links{
+    max-width: 90%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 20px;  
+}
+.footer-Institucional, .footer-politicas-da-loja, .footer-contact, .footer-social {
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+.footer-declaracao{
+    color: white;
+    height: 100%;
+    min-height: 50px;
+}
+.footer-links {
+    margin-bottom: 10px;
+}
+.footer-links h6{
+    margin-bottom: 8px;
+}
+.main .footer-social img{
+    width: 32px;
+    height: 32px;
+}
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: #231720;
+    color: #ffffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+@media(max-width:576px){
+
+footer {
+    height: 100%;
+}
+footer .main{
+    height: 100%;
+}
+.footer-links {
+    flex-direction: column;
+    padding-left: 10%;
+}
+}
