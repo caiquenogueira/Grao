@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styles.css"> 
+    <link rel="stylesheet" href="Css/style-depoiment.css">
+    <link rel="stylesheet" href="Css/style-faq.css">
+    <link rel="stylesheet" href="Css/style-footer.css">
+    <link rel="stylesheet" href="Css/catalogo home.css">
+    <link rel="stylesheet" href="Css/style carrossel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="Imagens/Objeto Inteligente de Vetor-2.png" type="image/x-icon">
+    <script src="./js/carrossel.js" defer></script>
+    
+    <title>Projeto Grão Natural</title>
+</head>
+
+<body>
+    
+
+    <!-- menu responsivo -->
+    <header>
+        <nav class="nav-bar">
+            
+            <div class="nav-list">
+                <ul>
+                   <a href="index.html"><li class="nav-item"><a href="#" class="nav-link"><b>Início</b></a></li></a> 
+                    <li class="nav-item"><a href="Sobre/Sobre.html" class="nav-link"><b>Sobre</b></a></li>
+                </ul>
+                <div class="logo">
+                    <img class="img_logo" src="Imagens/Logo_laranja_comescrita_branca_png-removebg-preview.png" width="300px" height="300px"  alt="logo laranja com escrita branca"> 
+                    
+                </div>
+                <ul>
+                    <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=5517996466777&text=Ol%C3%A1%2C%20tudo%20bem%3F%20estou%20vindo%20pelo%20Instagram%20%F0%9F%98%8A" target="_blank" class="nav-link"><b>Promoção</b></a></li>
+                    <li class="nav-item"><a href="Castanhas/Castanhas.html" class="nav-link"><b>Catálogo</b></a></li>
+                </ul>
+                                
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./imagem/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Promoção</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Catálogo</a></li>
+                <section id="cadastro">
+                    <h2>Acesse o Sistema de Cadastro</h2>
+                    <p>Baixe o sistema para gerenciar produtos e usuários:</p>
+                    <a href="EmporioGrainUI.jar" download>
+                        <button>Abrir Sistema de Cadastro</button>
+                    </a>
+            </ul>
+            
+
+        </div>
+    </header>
+    
+<!-- Fim do menu -->
+<br>
+<br>
+<br>
+
+<!--Slider principal-->
+<section class="slider">
+    <div class="slider-content">   <!--Conteudo do slide-->
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+        <input type="radio" name="btn-radio" id="radio4">
+       
+
+        <div class="slide-box primeiro">
+
+            <a href="Castanhas/Castanhas.html" target="_blank">
+                <img class="img-desktop" src="Imagens/1.png" alt="slide 1">
+            </a>
+           
+        </div>
+
+        <div class="slide-box">
+            <a href="Temperos/Temperos.html" target="_blank">
+                <img class="img-desktop" src="Imagens/2.png" alt="slide 1">
+            </a>
+        </div>
+
+
+        <div class="slide-box">
+            <a href="Farinaceos/Farinaceos.html" target="_blank">
+                <img class="img-desktop" src="Imagens/Farinaceos.jpeg" alt="slide 1">
+            </a>
+        </div>
+        
+        <div class="slide-box">
+            <a href="Suplementos/Suplementos.html" target="_blank">
+                <img class="img-desktop" src="Imagens/4.png" alt="slide 1">
+            </a>
+        </div>
+  
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        
+        </div>
+
+    </div>
+
+    <br><br><br><br>
+    <hr>
+
+
+</section>
+ <!--fim slider principal-->
+
+<!--Inicio do Submenu-->
+
+ <nav class="submenu">
+    <a href="Suplementos/Suplementos.html"><img src="https://i.imgur.com/s5JFlZa.png" alt="Imagem 1"></a>
+    <a href="Temperos/Temperos.html"><img src="https://i.imgur.com/TYHZliE.png" alt="Imagem 2"></a>
+    <a href="Farinaceos/Farinaceos.html"><img src="https://i.imgur.com/1uwvaxv.png" alt="Imagem 3"></a>
+    <a href="Castanhas/Castanhas.html"><img src="https://i.imgur.com/TepBHpG.png" alt="Imagem 4"></a>
+  </nav>
+
+<!--Fim do SubMenu-->
+
+<hr>
+
+
+ 
+<br><br><br><br>
+ <!--catalogo-->
+ <div class="catalog">
+    <div class="catalog-item" onclick="toggleDetails(1)">
+    <img src="Imagens/tamara-sem-caroco.jpg" alt="Imagem do Produto">
+      <h2>Tamara sem Caroço</h2>
+      <p class="price">R$ 4,40</p>
+      <div class="details" id="details2">
+      <p class="description">Tâmara sem caroço: Doce, Suave, Energética, Perfeita para Snacks Saudáveis e Receitas.</p>
+      </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+      <img src="Imagens/Castanha do para.jpg" alt="Imagem do Produto">
+        <h2>Castanha do Para</h2>
+        <p class="price">R$ 10,93</p>
+        <div class="details" id="details2">
+        <p class="description">Castanha do Pará: Grande, Nutritiva, Crocante, Sabor Intenso, Fonte Energética Natural.</p>
+        </div>
+      </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="Imagens/canela em pau.jpg" alt="Imagem do Produto2">
+          <h2>Canela em Pau</h2>
+          <p class="price">R$ 11,39</p>
+          <div class="details" id="details2">
+          <p class="description">Canela em Pau: Aromática, Versátil, Condimento Rico, Ideal para Infusões Aromáticas.</p>
+          </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="Imagens/Castanha.jpg" alt="Imagem do Produto2">
+          <h2>Castanha de Caju - Torrada sem sal</h2>
+          <p class="price">R$ 12,65</p>
+          <div class="details" id="details2">
+          <p class="description">Castanha de Caju: Crocante, Sabor Rica, Nutritiva, Perfeita para Snacks Saudáveis.</p>
+          </div>
+    </div>
+</div>
+
+<div class="catalog" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+    <div class="catalog-item" onclick="toggleDetails(1)">
+    <img src="Imagens/Uva passa.jpg" alt="Imagem do Produto">
+      <h2>Uva passa preta sem semente</h2>
+      <p class="price">R$ 2,88</p>
+      <div class="details" id="details2">
+      <p class="description">Uva passa preta: Dulçor intenso, Versátil, Ideal para Receitas e Snacks. </p>
+      </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="Imagens/Mix de Castanhas.jpg" alt="Imagem do Produto2">
+          <h2>Mix de Castanhas</h2>
+          <p class="price">R$ 12,65</p>
+          <div class="details" id="details2">
+          <p class="description">Mix de Castanhas: Crocante, Nutritivo, Variedade Saborosa, Lanche Energético Sofisticado.</p>
+          </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="Imagens/Amendoa.png" alt="Imagem do Produto2">
+          <h2>Amendoa Torrada</h2>
+          <p class="price">R$ 9,20</p>
+          <div class="details" id="details2">
+          <p class="description">Amêndoa Torrada: Crocante, Dourada, Sabor Intenso, Snack Sofisticado e Nutritivo.</p>
+          </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+      <img src="Imagens/Aveia em Flocos.jpg" alt="Imagem do Produto2">
+        <h2>Aveia em Flocos</h2>
+        <p class="price">R$ 1,61</p>
+        <div class="details" id="details2">
+        <p class="description">Aveia em flocos: Nutritiva, Versátil, Fonte de Energia, Ideal para Receitas.</p>
+        </div>
+  </div>
+</div>
+
+<!--fim catalogo-->
+
+<br>
+<br>
+<br>
+
+ <!--Depoimentos-->
+
+ <div class="section-header">
+    <h2 class="title">O que nossos clientes estão dizendo ?</h2>
+</div>
+<main class="depoiments">
+    <div class="depoimentos depoimento-1">
+        <div class="slide selecionado">
+            <div class="testimonials-conten">
+                <div class="testimonials-item">
+                    <div class="info">
+                        <img src="Imagens/Grão.jpg" alt="imagem anonima">
+                        <div class="text-box">
+                            <h3 class="name">Grão avaliação 1</h3>
+                            <span class="job"><strong>Trabalho provisório</strong></span>
+                        </div>
+                    </div>
+                    <p><strong>
+                        Amei a incrível variedade de grãos disponíveis neste empório! Desde quinoa orgânica até grãos exóticos, encontrei tudo o que precisava para a minha despensa saudável.
+                    </strong></p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="depoimentos depoimento-2">
+        
+        <div class="slide">
+            <div class="testimonials-conten">
+                <div class="testimonials-item">
+                    <div class="info">
+                        <img src="Imagens/Grão.jpg" alt="imagem anonima">
+                        <div class="text-box">
+                            <h3 class="name">Grão avaliação 2</h3>
+                            <span class="job"><strong>Trabalho provisório</strong></span>
+                        </div>
+                    </div>
+                    <p><strong>
+                        A experiência de compra neste empório foi fantástica! A equipe estava extremamente bem informada sobre cada tipo de grão e suas propriedades.
+                    </strong></p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="depoimentos depoimento-3">
+        
+        <div class="slide">
+            <div class="testimonials-conten">
+                <div class="testimonials-item">
+                    <div class="info">
+                        <img src="Imagens/Grão.jpg" alt="imagem anonima">
+                        <div class="text-box">
+                            <h3 class="name">Grão avaliação 3</h3>
+                            <span class="job"><strong>Trabalho provisório</strong></span>
+                        </div>
+                    </div>
+                    <p><strong>
+                        Este empório não é apenas um local para comprar grãos, mas também oferece uma atmosfera encantadora. A decoração é aconchegante, com prateleiras organizadas e um ambiente limpo.
+                    </strong></p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="radio">
+        <input type="radio" name="toggle" id="radio1"> <label for="radio1">Radio 1</label>
+        <input type="radio" name="toggle" id="radio2"> <label for="radio2">Radio 2</label>
+        <input type="radio" name="toggle" id="radio3"> <label for="radio3">Radio 3</label>  
+    </div>
+    
+
+    
+    
+
+
+</main>
+
+<!--FAQ-->
+<div class="depoiments">
+<section>
+    <details>
+        <summary class="question-faq"><b><strong>Meu pedido pode demorar mais de 7 dias  para chegar?</strong></b></summary>
+        <p class="resposta-faq"><strong>Embora o prazo máximo para entrega seja 7 dias úteis, é possivel que alguns pedidos demorem mais que isso para chegar, dependendo do destino e da logística dos Correios.</strong></p>
+    </details><br>
+    <details>
+        <summary class="question-faq"><b>Posso devolver minha compra em caso de arrependimento?</b></summary>
+        <p class="resposta-faq"><strong>Sim, para saber mais sobre políticas de trocas e devoluções, visite a página "Troca e devoluções" no rodapé de nosso site.</strong> </p>
+    </details><br>
+    <details>    
+        <summary class="question-faq"><b>Se eu fizer mais que um pedido, todos chegarão juntos?</b></summary>
+        <p class="resposta-faq"><strong>Sim , se você fizer mais que um pedido , o Grão Natural Empório enviará todos os itens juntos, para garantir uma entrega mais rápida e eficiente.</strong></p>
+    </details><br>
+    <details>    
+        <summary class="question-faq"><b>Qual a procedência dos produtos da Grão Natural Empório?</b></summary>
+        <p class="resposta-faq"><strong>Nossos produtos provém de fontes confiáveis , incluíndo fornecedores locais e internacionais que atendem nossos critérios rigorosos de qualidade. Além disso, estamos sempre em busca de igredientes naturais, orgânicos e saudáveis para compor nosso catá <br>Temos o compromisso de garantir que cada item em nosso estoque atenda as normas de segurança alimentar e de qualidade. Fornecendo informações transparenrtes sobre a origem e os benefícios de cada produto para que você possa fazer escolhas informadas e saudáveis. </strong></p>
+    </details><br>
+</section>
+</div>
+<!--Fim FAQ-->
+
+
+<!--Início do Footer (rodapé)-->
+<footer>
+    <div class="main">
+        
+        <div class="content footer-links">
+            <div class="footer-declaracao">
+                <h3>Nossa Dedicação  a Você</h3>
+                <br>
+                    <div class="footer-contact">
+                        <h3>Fale conosco</h3>
+                        <h6>(17)99646-6777</h6>
+                        <h6>graonatural.emporio@gmail.com</h6>
+                        <h3>Faça-nos uma visita</h3>
+                        <h6>Ra General Gicério,3898, São José do Rio Preto<br> São Paulo - Brasil. CEP 15015-400</h6>
+                    </div>
+            </div>
+            
+            <div class="footer-Institucional">
+                <h3>Institucional </h3>
+                <h6>Início </h6>
+                <h6>Promoções </h6>
+                <h6>Mais vendidos</h6>
+                <h6>FAQ</h6>
+            </div>
+            <div class="footer-politicas-da-loja">
+                <h3>Políticas da Loja </h3>
+                <h6>Política de Privacidade </h6>
+                <h6>Trocas </h6>
+                <h6>Devoluções e Reembolso</h6>
+            </div>
+            <div class="footer-social">
+                <h3>Fique Conectado</h3>
+                <a href="https://www.instagram.com/grao_natural_emporio/" target="_blank"><img src="Imagens/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100090692505353" target="_blank"><img src="Imagens/facebook.png" alt="Facebook"></a>
+                <a href="https://api.whatsapp.com/send?phone=5517996466777&text=Ol%C3%A1%2C%20tudo%20bem%3F%20estou%20vindo%20pelo%20Instagram%20%F0%9F%98%8A" target="_blank"><img src="Imagens/Whatsapp.png"  alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="last">
+            Grão Impório Natural - Equipe CFJN Fatec - Versão Demo
+         </div>
+
+
+    </div>
+</footer>
+<section id="cadastro">
+    <h2>Acesse o Sistema de Cadastro</h2>
+    <p>Baixe o sistema para gerenciar produtos e usuários:</p>
+    <a href="EmporioGrainUI.jar" download>
+        <button>Abrir Sistema de Cadastro</button>
+    </a>
+</section>
+
+
+<script src="./js/script.js"></script>
+<script src="./js/catalogo home.js"></script>
+<script src="JS/script-depoiments.js"></script>
+
+</body>
+</html>

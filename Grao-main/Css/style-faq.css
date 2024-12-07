@@ -1,0 +1,27 @@
+ /* Início FAQ*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+ .question-faq {
+    font-family: 'Poppins';
+    height: 35px;
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #231720;
+    padding: 10px;
+    color: #ffffffff;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px #464646;
+}
+.resposta-faq {
+    height: 60px;
+    margin-bottom: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 10px ;
+    border-radius: 20px;   
+}
+
+    /*Fim FAQ*/
+
+   

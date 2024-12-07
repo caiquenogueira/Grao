@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="Farinaceos.css">
+  <link rel="shortcut icon" href="../Imagens/Objeto Inteligente de Vetor-2.png" type="image/x-icon">
+  <title>Farináceos</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+    
+    header {
+      font-family: 'Poppins';
+      background-color: #ff6900;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    nav {
+      background-color: #ff6900;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: center; /* Centraliza os itens do menu */
+      align-items: center;
+      padding: 0 100px;
+    }
+
+    .nav-item {
+      list-style: none;
+      display: inline;
+      margin: 0 100px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .product-container {
+      display: inline-block;
+      width: 300px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      height: 50px; /* Altura fixa para manter proporções */
+      object-fit: cover; /* Mantém a proporção sem distorcer a imagem */
+    }
+
+    h2 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .laranja-button-maior {
+      padding: 15px 20px;
+      font-size: 16px;
+      background-color: #ff6900;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    .laranja-button-maior:hover {
+      background-color: #ff8533;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="../Index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="https://www.whatsapp.com/?lang=pt_BR" class="nav-link">Sobre</a></li>
+        </ul>
+        <div class="logo">
+          <img class="img_logo" src="../Imagens/Logo_laranja_comescrita_branca_png-removebg-preview.png" alt="Grão Natural">
+        </div>
+        <ul>
+          <li class="nav-item"><a href="https://www.whatsapp.com/?lang=pt_BR" class="nav-link">Promoção</a></li>
+          <li class="nav-item"><a href="../Castanhas/Castanhas.html" class="nav-link">Catálogo</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <!--Fim do Header-->
+
+
+
+  <!--Inicio do Catalogo-->
+
+  <div class="catalog">
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+    <img src="../Imagens/Aveia Flocos Finos.jpg" alt="Imagem do Produto">
+      <h2>Aveia Flocos Finos</h2>
+      <p class="price">R$ 98,90</p>
+      <div class="details" id="details2">
+      <p class="description">Aveia flocos finos: fibra, nutrientes, versatilidade culinária, saúde digestiva e saciedade.</p>
+      </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+      <img src="../Imagens/Açai em Pó.jpg" alt="Imagem do Produto">
+        <h2>Açai em Pó</h2>
+        <p class="price">R$ 98,90</p>
+        <div class="details" id="details2">
+        <p class="description">Guaraná em pó: estimulante natural, vitalidade duradoura, energia revigorante.</p>
+        </div>
+      </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Cuscuz Marroquino.jpg" alt="Imagem do Produto2">
+          <h2>Cuscuz Marroquino</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Cuscuz marroquino: grão durum, textura leve, versátil, sabor autêntico marroquino.</p>
+          </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Farinha de Aveia.jpg" alt="Imagem do Produto2">
+          <h2>Farinha de Aveia</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Farinha de aveia: nutritiva, versátil, ideal para receitas saudáveis e saborosas.</p>
+          </div>
+    </div>
+
+</div>
+
+<div class="catalog" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+    <div class="catalog-item" onclick="toggleDetails(1)">
+    <img src="../Imagens/Farinha Panko.jpg" alt="Imagem do Produto">
+      <h2>Farinha Panko</h2>
+      <p class="price">R$ 98,90</p>
+      <div class="details" id="details2">
+      <p class="description">Farinha Panko: crocância perfeita, revolucione suas receitas fritas e assadas.</p>
+      </div>
+    </div>
+
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Fécula de Batata.jpg" alt="Imagem do Produto2">
+          <h2>Fécula de Batata</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Fécula de batata: textura leve, versátil, ideal para receitas culinárias diversas.</p>
+          </div>
+    </div>
+
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+        <img src="../Imagens/Guarana em pó.jpg" alt="Imagem do Produto2">
+          <h2>Guarana em Pó</h2>
+          <p class="price">R$ 98,90</p>
+          <div class="details" id="details2">
+          <p class="description">Guaraná em pó: Energia natural, estimulante, revigorante para seu dia.</p>
+          </div>
+    </div>
+
+    <div class="catalog-item" onclick="toggleDetails(1)">
+      <img src="../Imagens/Tapioca Granulada.jpg" alt="Imagem do Produto2">
+        <h2>Tapioca Granulada </h2>
+        <p class="price">R$ 98,90</p>
+        <div class="details" id="details2">
+        <p class="description">Tapioca granulada: Versátil, sem glúten, base perfeita para diversas receitas.</p>
+        </div>
+  </div>
+
+
+</div>
+        </a>
+      </div>
+    <!-- Adicione os outros produtos conforme necessário -->
+  </div>
+  <script src="Farinaceos.js"></script>
+
+  <!--Fim do catalogo-->
+
+  <footer>   
+    <footer style="background-color: #ed4f0f; padding: 0px;">
+        <div class="main">
+            <div class="content footer-links" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div class="footer-section footer-declaracao" style="width: 20%; margin: 0px; text-align: left;">
+                    
+                    <div class="footer-contact">
+                        <h3>Fale conosco</h3>
+                        <h5>(17)99646-6777</h5>
+                        <h5>graonatural.emporio@gmail.com</h5>
+                
+                        <h5>Ra General Gicério,3898, São José do Rio Preto<br> São Paulo </h5>
+                    </div>
+                </div>
+                
+                <div class="footer-section footer-Institucional" style="width: 25%; margin: 8px; text-align: left;">
+                    <h3>Institucional </h3>
+            
+                   
+                    <h6>Mais vendidos</h6>
+                    <h6>FAQ</h6>
+                </div>
+                
+                <div class="footer-section footer-politicas-da-loja" style="width: 25%; margin: 8px; text-align: left;">
+                    <h3>Políticas da Loja </h3>
+                    <h6>Política de Privacidade </h6>
+                    <h6>Trocas </h6>
+                    <h6>Devoluções e Reembolso</h6>
+                </div>
+                
+
+            <div class="footer-social">
+                <h3>Fique Conectado</h3>
+                <a href="https://www.instagram.com/grao_natural_emporio/" target="_blank"><img src="../Imagens/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100090692505353" target="_blank"><img src="../Imagens/facebook.png" alt="Facebook"></a>
+                <a href="https://api.whatsapp.com/send?phone=5517996466777&text=Ol%C3%A1%2C%20tudo%20bem%3F%20estou%20vindo%20pelo%20Instagram%20%F0%9F%98%8A" target="_blank"><img src="../Imagens/Whatsapp.png"  alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="last">
+            Grão Impório Natural - Equipe CFJN Fatec - Versão Demo
+         </div>
+
+
+    </div>
+</footer>
+</body>
+</html>
