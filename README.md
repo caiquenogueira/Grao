@@ -1,70 +1,47 @@
-# Empório Grão - Website
+# Empório Grão Natural
 
-Este projeto representa um site para o **Empório Grão**, uma plataforma voltada para a venda e divulgação de produtos naturais, como castanhas, farináceos, temperos, suplementos e muito mais.
+Bem-vindo ao sistema de gestão do Empório Grão Natural! Este projeto foi desenvolvido para otimizar a gestão de produtos, vendas e promoções de uma empresa especializada em grãos naturais.
 
-## Estrutura do Projeto
+---
 
-### Diretórios e Arquivos Principais
-- **Root (`/Grao/`)**
-  - `EmporioGrainUI.java`: Arquivo Java, possivelmente relacionado a funcionalidades backend ou integração.
-  - `index.html`: Página inicial do site.
+## 📋 Descrição do Projeto
 
-- **Subdiretórios**
-  - **Castanhas/**: Páginas e estilos relacionados às castanhas.
-    - `Castanhas.html`
-    - `castanhasgraos.css`
-    - `castanhasgraos.js`
+O **Empório Grão Natural** é uma aplicação desenvolvida para gerenciar:
+- Cadastro de produtos (Farináceos, Castanhas, Suplementos e Temperos);
+- Inserção de promoções;
+- Cadastro e gerenciamento de vendas;
+- Registro e autenticação de usuários.
 
-  - **Css/**: Arquivos de estilos globais e específicos.
-    - `catalogo home.css`
-    - `style carrossel.css`
-    - Outros arquivos de estilo (footer, depoimentos, etc.).
+O sistema foi implementado com uma interface amigável, promovendo facilidade no uso e eficiência na gestão de operações.
 
-  - **Farinaceos/**: Páginas, estilos e scripts relacionados aos farináceos.
-    - `Farinaceos.html`
-    - `Farinaceos.css`
-    - `Farinaceos.js`
+---
 
-  - **Imagens/**: Biblioteca de imagens usadas no site, incluindo produtos, banners e ícones.
+## 🛠️ Funcionalidades
 
-  - **JS/**: Scripts de funcionalidades do site.
-    - `carrossel.js`: Provavelmente usado para sliders.
-    - `catalogo home.js`: Funcionalidades do catálogo.
-    - Outros scripts específicos.
+1. **Login e Cadastro de Usuários**
+   - Registro de novos usuários (com e-mail, nome e senha).
+   - Autenticação de login para acesso ao sistema.
 
-  - **Sobre/**: Informações sobre a empresa.
-    - `Sobre.html`
-    - `style-sobre.css`
-    - Imagens da equipe e da fachada.
+2. **Gestão de Produtos**
+   - Cadastro de novos produtos com ID, nome, preço, categoria e quantidade em estoque.
 
-  - **Suplementos/**: Conteúdo específico para suplementos alimentares.
-    - `Suplementos.html`
-    - `suplementos.css`
-    - `suplementos.js`
+3. **Promoções**
+   - Inserção de promoções com código e desconto aplicado.
 
-  - **Temperos/**: Seção de temperos com HTML, CSS e JavaScript.
-    - `Temperos.html`
-    - `Temperos.css`
-    - `Temperos.js`
+4. **Gestão de Vendas**
+   - Registro de vendas, incluindo produto vendido, preço e quantidade.
 
-## Como Executar o Projeto
+---
 
-1. **Pré-requisitos:**
-   - Navegador moderno para visualizar as páginas HTML.
-   - Ambiente de desenvolvimento Java (para executar `EmporioGrainUI.java`, se necessário).
+## 💻 Tecnologias Utilizadas
 
-2. **Passos:**
-   - Extraia os arquivos do diretório `Grao/`.
-   - Abra `index.html` em seu navegador para visualizar a página inicial.
-   - Navegue pelas outras páginas através dos links no site ou acessando diretamente os arquivos HTML.
+- **Java Swing**: Interface gráfica para interação com o usuário.
+- **Git**: Controle de versão.
+- **IDE VS Code**: Ambiente de desenvolvimento integrado.
+- **Modelo MVC**: Arquitetura em camadas para melhor organização do código.
 
-3. **Scripts e Estilos:**
-   - Os arquivos CSS e JS estão organizados em subdiretórios e são vinculados nas respectivas páginas.
+---
 
-## Contribuição
+## 📂 Estrutura do Projeto
 
-Sinta-se à vontade para sugerir melhorias ou correções. Envie pull requests ou abra issues para discussões.
 
-## Licença
-
-Este projeto é apenas para fins educacionais ou demonstrativos. Consulte o autor para outras utilizações.
